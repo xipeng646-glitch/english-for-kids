@@ -2,6 +2,9 @@
 // 来源核对：jindyey.com 上册知识点汇总（全文）、xinjiapo.news 下册知识点（全文）、
 // max.book118.com 下册单词表、ttzyw.com / bg4.cn 上册期末复习教案（多源交叉核对）。
 // 不含音标（PEP 四年级不学音标）。每词一条简单例句。
+// 扩展包：常用高频词（数字/颜色/动物/食物/身体部位/时间），单元 ext1–ext6，id 前缀 ext，
+// 与 PEP 194 词逐词核对过，重复的 13 词（thirty/forty/eighty、horse/cow/sheep/chicken、
+// noodles/candy/vegetables/potato/tomato/carrot、hair）未重复收录。
 // 字段：id（稳定编号） unit（单元） en（英文） zh（中文意思） ex（例句） emoji（图画提示）
 
 const UNITS = [
@@ -16,7 +19,13 @@ const UNITS = [
   { id: "u9",  book: "下册", n: 3, title: "Weather",           zh: "天气" },
   { id: "u10", book: "下册", n: 4, title: "At the farm",       zh: "在农场" },
   { id: "u11", book: "下册", n: 5, title: "My clothes",        zh: "我的衣服" },
-  { id: "u12", book: "下册", n: 6, title: "Shopping",          zh: "购物" }
+  { id: "u12", book: "下册", n: 6, title: "Shopping",          zh: "购物" },
+{ id: "ext1", book: "扩展", n: 1, title: "Numbers",  zh: "数字" },
+  { id: "ext2", book: "扩展", n: 2, title: "Colours",  zh: "颜色" },
+  { id: "ext3", book: "扩展", n: 3, title: "Animals",  zh: "动物" },
+  { id: "ext4", book: "扩展", n: 4, title: "Food",     zh: "食物" },
+  { id: "ext5", book: "扩展", n: 5, title: "Body",     zh: "身体部位" },
+  { id: "ext6", book: "扩展", n: 6, title: "Time",     zh: "时间" }
 ];
 
 const WORDS = [
@@ -236,7 +245,131 @@ const WORDS = [
   { id: "u12-16", unit: "u12", en: "dollar",       zh: "美元",     ex: "It's 89 dollars.",                        emoji: "💵" },
   { id: "u12-17", unit: "u12", en: "sale",         zh: "特价销售；大减价", ex: "It's on sale.",               emoji: "🛍️" },
   { id: "u12-18", unit: "u12", en: "more",         zh: "更多的",   ex: "I want more.",                             emoji: "➕" },
-  { id: "u12-19", unit: "u12", en: "us",           zh: "我们",     ex: "Can you help us?",                         emoji: "👨‍👩‍👧" }
+  { id: "u12-19", unit: "u12", en: "us",           zh: "我们",     ex: "Can you help us?",                         emoji: "👨‍👩‍👧" },
+// ---------- 扩展 Unit 1 Numbers 数字（25词；thirty/forty/eighty 已在 PEP U12，略过）----------
+  { id: "ext1-01", unit: "ext1", en: "one",        zh: "一",      ex: "I have one apple.",                  emoji: "1️⃣" },
+  { id: "ext1-02", unit: "ext1", en: "two",        zh: "二",      ex: "I have two cats.",                   emoji: "2️⃣" },
+  { id: "ext1-03", unit: "ext1", en: "three",      zh: "三",      ex: "I see three birds.",                 emoji: "3️⃣" },
+  { id: "ext1-04", unit: "ext1", en: "four",       zh: "四",      ex: "Four books on the desk.",             emoji: "4️⃣" },
+  { id: "ext1-05", unit: "ext1", en: "five",       zh: "五",      ex: "Five apples, please.",               emoji: "5️⃣" },
+  { id: "ext1-06", unit: "ext1", en: "six",        zh: "六",      ex: "Six eggs in the box.",                emoji: "6️⃣" },
+  { id: "ext1-07", unit: "ext1", en: "seven",      zh: "七",      ex: "Seven days in a week.",               emoji: "7️⃣" },
+  { id: "ext1-08", unit: "ext1", en: "eight",      zh: "八",      ex: "Eight pens on the desk.",             emoji: "8️⃣" },
+  { id: "ext1-09", unit: "ext1", en: "nine",       zh: "九",      ex: "Nine stars in the sky.",              emoji: "9️⃣" },
+  { id: "ext1-10", unit: "ext1", en: "ten",        zh: "十",      ex: "I have ten toes.",                   emoji: "🔟" },
+  { id: "ext1-11", unit: "ext1", en: "eleven",     zh: "十一",    ex: "Eleven children in the room.",        emoji: "🔢" },
+  { id: "ext1-12", unit: "ext1", en: "twelve",     zh: "十二",    ex: "Twelve months in a year.",            emoji: "🔢" },
+  { id: "ext1-13", unit: "ext1", en: "thirteen",   zh: "十三",    ex: "Thirteen books on the shelf.",        emoji: "🔢" },
+  { id: "ext1-14", unit: "ext1", en: "fourteen",   zh: "十四",    ex: "Fourteen apples in the bag.",         emoji: "🔢" },
+  { id: "ext1-15", unit: "ext1", en: "fifteen",    zh: "十五",    ex: "Fifteen students in the class.",      emoji: "🔢" },
+  { id: "ext1-16", unit: "ext1", en: "sixteen",    zh: "十六",    ex: "Sixteen crayons in the box.",         emoji: "🔢" },
+  { id: "ext1-17", unit: "ext1", en: "seventeen",  zh: "十七",    ex: "Seventeen chairs in the room.",       emoji: "🔢" },
+  { id: "ext1-18", unit: "ext1", en: "eighteen",   zh: "十八",    ex: "Eighteen ducks in the pond.",         emoji: "🔢" },
+  { id: "ext1-19", unit: "ext1", en: "nineteen",   zh: "十九",    ex: "Nineteen cats in the yard.",          emoji: "🔢" },
+  { id: "ext1-20", unit: "ext1", en: "twenty",     zh: "二十",    ex: "I can count to twenty.",              emoji: "🔢" },
+  { id: "ext1-21", unit: "ext1", en: "fifty",      zh: "五十",    ex: "Fifty yuan for the book.",            emoji: "🔢" },
+  { id: "ext1-22", unit: "ext1", en: "sixty",      zh: "六十",    ex: "Sixty minutes in an hour.",           emoji: "🔢" },
+  { id: "ext1-23", unit: "ext1", en: "seventy",    zh: "七十",    ex: "Seventy students in the school.",     emoji: "🔢" },
+  { id: "ext1-24", unit: "ext1", en: "ninety",     zh: "九十",    ex: "Ninety books on the shelf.",          emoji: "🔢" },
+  { id: "ext1-25", unit: "ext1", en: "one hundred", zh: "一百",   ex: "I have one hundred yuan.",            emoji: "💯" },
+
+  // ---------- 扩展 Unit 2 Colours 颜色（13词）----------
+  { id: "ext2-01", unit: "ext2", en: "red",    zh: "红色",  ex: "The apple is red.",     emoji: "🔴" },
+  { id: "ext2-02", unit: "ext2", en: "blue",   zh: "蓝色",  ex: "The sky is blue.",      emoji: "🔵" },
+  { id: "ext2-03", unit: "ext2", en: "green",  zh: "绿色",  ex: "The grass is green.",   emoji: "🟢" },
+  { id: "ext2-04", unit: "ext2", en: "yellow", zh: "黄色",  ex: "The banana is yellow.", emoji: "🟡" },
+  { id: "ext2-05", unit: "ext2", en: "orange", zh: "橙色",  ex: "The carrot is orange.", emoji: "🟠" },
+  { id: "ext2-06", unit: "ext2", en: "purple", zh: "紫色",  ex: "The grape is purple.",  emoji: "🟣" },
+  { id: "ext2-07", unit: "ext2", en: "pink",   zh: "粉色",  ex: "The flower is pink.",   emoji: "🌸" },
+  { id: "ext2-08", unit: "ext2", en: "brown",  zh: "棕色",  ex: "The bear is brown.",    emoji: "🟤" },
+  { id: "ext2-09", unit: "ext2", en: "black",  zh: "黑色",  ex: "The cat is black.",     emoji: "⚫" },
+  { id: "ext2-10", unit: "ext2", en: "white",  zh: "白色",  ex: "The milk is white.",    emoji: "⚪" },
+  { id: "ext2-11", unit: "ext2", en: "gray",   zh: "灰色",  ex: "The cloud is gray.",    emoji: "☁️" },
+  { id: "ext2-12", unit: "ext2", en: "gold",   zh: "金色",  ex: "The star is gold.",     emoji: "🌟" },
+  { id: "ext2-13", unit: "ext2", en: "silver", zh: "银色",  ex: "The medal is silver.",  emoji: "🥈" },
+
+  // ---------- 扩展 Unit 3 Animals 动物（16词；horse/cow/sheep/chicken 已在 PEP U10，略过）----------
+  { id: "ext3-01", unit: "ext3", en: "dog",       zh: "狗",    ex: "This is my dog.",            emoji: "🐶" },
+  { id: "ext3-02", unit: "ext3", en: "cat",       zh: "猫",    ex: "The cat is cute.",           emoji: "🐱" },
+  { id: "ext3-03", unit: "ext3", en: "bird",      zh: "鸟",    ex: "The bird can fly.",          emoji: "🐦" },
+  { id: "ext3-04", unit: "ext3", en: "fish",      zh: "鱼",    ex: "The fish can swim.",         emoji: "🐟" },
+  { id: "ext3-05", unit: "ext3", en: "rabbit",    zh: "兔子",  ex: "The rabbit is white.",       emoji: "🐰" },
+  { id: "ext3-06", unit: "ext3", en: "duck",      zh: "鸭子",  ex: "The duck can swim.",         emoji: "🦆" },
+  { id: "ext3-07", unit: "ext3", en: "bear",      zh: "熊",    ex: "The bear is big.",           emoji: "🐻" },
+  { id: "ext3-08", unit: "ext3", en: "panda",     zh: "熊猫",  ex: "The panda is cute.",         emoji: "🐼" },
+  { id: "ext3-09", unit: "ext3", en: "monkey",    zh: "猴子",  ex: "The monkey is funny.",       emoji: "🐵" },
+  { id: "ext3-10", unit: "ext3", en: "tiger",     zh: "老虎",  ex: "The tiger is big.",          emoji: "🐯" },
+  { id: "ext3-11", unit: "ext3", en: "lion",      zh: "狮子",  ex: "The lion is strong.",        emoji: "🦁" },
+  { id: "ext3-12", unit: "ext3", en: "elephant",  zh: "大象",  ex: "The elephant is big.",       emoji: "🐘" },
+  { id: "ext3-13", unit: "ext3", en: "pig",       zh: "猪",    ex: "The pig is pink.",           emoji: "🐷" },
+  { id: "ext3-14", unit: "ext3", en: "snake",     zh: "蛇",    ex: "The snake is long.",         emoji: "🐍" },
+  { id: "ext3-15", unit: "ext3", en: "frog",      zh: "青蛙",  ex: "The frog can jump.",         emoji: "🐸" },
+  { id: "ext3-16", unit: "ext3", en: "butterfly", zh: "蝴蝶",  ex: "The butterfly is beautiful.", emoji: "🦋" },
+
+  // ---------- 扩展 Unit 4 Food 食物（16词；noodles/candy/vegetables/potato/tomato/carrot 已在 PEP，略过）----------
+  { id: "ext4-01", unit: "ext4", en: "apple",      zh: "苹果",    ex: "I like apples.",          emoji: "🍎" },
+  { id: "ext4-02", unit: "ext4", en: "banana",     zh: "香蕉",    ex: "The banana is yellow.",    emoji: "🍌" },
+  { id: "ext4-03", unit: "ext4", en: "orange",     zh: "橙子",    ex: "This is an orange.",       emoji: "🍊" },
+  { id: "ext4-04", unit: "ext4", en: "grape",      zh: "葡萄",    ex: "I like grapes.",           emoji: "🍇" },
+  { id: "ext4-05", unit: "ext4", en: "strawberry", zh: "草莓",    ex: "The strawberry is red.",   emoji: "🍓" },
+  { id: "ext4-06", unit: "ext4", en: "watermelon", zh: "西瓜",    ex: "I like watermelon.",       emoji: "🍉" },
+  { id: "ext4-07", unit: "ext4", en: "bread",      zh: "面包",    ex: "I like bread.",            emoji: "🍞" },
+  { id: "ext4-08", unit: "ext4", en: "rice",       zh: "米饭",    ex: "I like rice.",             emoji: "🍚" },
+  { id: "ext4-09", unit: "ext4", en: "egg",        zh: "鸡蛋",    ex: "I have an egg.",           emoji: "🥚" },
+  { id: "ext4-10", unit: "ext4", en: "milk",       zh: "牛奶",    ex: "I like milk.",             emoji: "🥛" },
+  { id: "ext4-11", unit: "ext4", en: "water",      zh: "水",      ex: "I like water.",            emoji: "💧" },
+  { id: "ext4-12", unit: "ext4", en: "juice",      zh: "果汁",    ex: "I like juice.",            emoji: "🧃" },
+  { id: "ext4-13", unit: "ext4", en: "cake",       zh: "蛋糕",    ex: "This is a big cake.",      emoji: "🍰" },
+  { id: "ext4-14", unit: "ext4", en: "ice cream",  zh: "冰激凌",  ex: "I like ice cream.",        emoji: "🍦" },
+  { id: "ext4-15", unit: "ext4", en: "hamburger",  zh: "汉堡包",  ex: "This is a hamburger.",     emoji: "🍔" },
+  { id: "ext4-16", unit: "ext4", en: "pizza",      zh: "比萨饼",  ex: "I like pizza.",            emoji: "🍕" },
+
+  // ---------- 扩展 Unit 5 Body 身体部位（14词；hair 已在 PEP U3，略过）----------
+  { id: "ext5-01", unit: "ext5", en: "head",     zh: "头",    ex: "This is my head.",     emoji: "👤" },
+  { id: "ext5-02", unit: "ext5", en: "eye",      zh: "眼睛",  ex: "I have two eyes.",     emoji: "👀" },
+  { id: "ext5-03", unit: "ext5", en: "ear",      zh: "耳朵",  ex: "I have two ears.",     emoji: "👂" },
+  { id: "ext5-04", unit: "ext5", en: "nose",     zh: "鼻子",  ex: "This is my nose.",     emoji: "👃" },
+  { id: "ext5-05", unit: "ext5", en: "mouth",    zh: "嘴巴",  ex: "This is my mouth.",    emoji: "👄" },
+  { id: "ext5-06", unit: "ext5", en: "hand",     zh: "手",    ex: "This is my hand.",     emoji: "✋" },
+  { id: "ext5-07", unit: "ext5", en: "arm",      zh: "手臂",  ex: "This is my arm.",      emoji: "💪" },
+  { id: "ext5-08", unit: "ext5", en: "leg",      zh: "腿",    ex: "This is my leg.",      emoji: "🦵" },
+  { id: "ext5-09", unit: "ext5", en: "foot",     zh: "脚",    ex: "This is my foot.",     emoji: "🦶" },
+  { id: "ext5-10", unit: "ext5", en: "face",     zh: "脸",    ex: "This is my face.",     emoji: "😊" },
+  { id: "ext5-11", unit: "ext5", en: "tooth",    zh: "牙齿",  ex: "This is my tooth.",    emoji: "🦷" },
+  { id: "ext5-12", unit: "ext5", en: "finger",   zh: "手指",  ex: "This is my finger.",   emoji: "☝️" },
+  { id: "ext5-13", unit: "ext5", en: "shoulder", zh: "肩膀",  ex: "This is my shoulder.", emoji: "🤷" },
+  { id: "ext5-14", unit: "ext5", en: "knee",     zh: "膝盖",  ex: "This is my knee.",     emoji: "🧎" },
+
+  // ---------- 扩展 Unit 6 Time 时间（29词）----------
+  { id: "ext6-01", unit: "ext6", en: "Monday",    zh: "星期一",   ex: "Today is Monday.",            emoji: "📅" },
+  { id: "ext6-02", unit: "ext6", en: "Tuesday",   zh: "星期二",   ex: "Today is Tuesday.",           emoji: "📅" },
+  { id: "ext6-03", unit: "ext6", en: "Wednesday", zh: "星期三",   ex: "Today is Wednesday.",         emoji: "📅" },
+  { id: "ext6-04", unit: "ext6", en: "Thursday",  zh: "星期四",   ex: "Today is Thursday.",          emoji: "📅" },
+  { id: "ext6-05", unit: "ext6", en: "Friday",    zh: "星期五",   ex: "Today is Friday.",            emoji: "📅" },
+  { id: "ext6-06", unit: "ext6", en: "Saturday",  zh: "星期六",   ex: "Today is Saturday.",          emoji: "📅" },
+  { id: "ext6-07", unit: "ext6", en: "Sunday",    zh: "星期日",   ex: "Today is Sunday.",            emoji: "📅" },
+  { id: "ext6-08", unit: "ext6", en: "January",   zh: "一月",     ex: "My birthday is in January.",  emoji: "❄️" },
+  { id: "ext6-09", unit: "ext6", en: "February",  zh: "二月",     ex: "My birthday is in February.", emoji: "🌸" },
+  { id: "ext6-10", unit: "ext6", en: "March",     zh: "三月",     ex: "My birthday is in March.",    emoji: "🌱" },
+  { id: "ext6-11", unit: "ext6", en: "April",     zh: "四月",     ex: "My birthday is in April.",    emoji: "🌧️" },
+  { id: "ext6-12", unit: "ext6", en: "May",       zh: "五月",     ex: "My birthday is in May.",      emoji: "🌷" },
+  { id: "ext6-13", unit: "ext6", en: "June",      zh: "六月",     ex: "My birthday is in June.",     emoji: "☀️" },
+  { id: "ext6-14", unit: "ext6", en: "July",      zh: "七月",     ex: "My birthday is in July.",     emoji: "🌞" },
+  { id: "ext6-15", unit: "ext6", en: "August",    zh: "八月",     ex: "My birthday is in August.",   emoji: "🌻" },
+  { id: "ext6-16", unit: "ext6", en: "September", zh: "九月",     ex: "My birthday is in September.", emoji: "🍂" },
+  { id: "ext6-17", unit: "ext6", en: "October",   zh: "十月",     ex: "My birthday is in October.",  emoji: "🎃" },
+  { id: "ext6-18", unit: "ext6", en: "November",  zh: "十一月",   ex: "My birthday is in November.", emoji: "🍁" },
+  { id: "ext6-19", unit: "ext6", en: "December",  zh: "十二月",   ex: "My birthday is in December.", emoji: "🎄" },
+  { id: "ext6-20", unit: "ext6", en: "today",     zh: "今天",     ex: "Today is a sunny day.",       emoji: "📆" },
+  { id: "ext6-21", unit: "ext6", en: "tomorrow",  zh: "明天",     ex: "See you tomorrow.",           emoji: "🌅" },
+  { id: "ext6-22", unit: "ext6", en: "yesterday", zh: "昨天",     ex: "It was sunny yesterday.",     emoji: "🌇" },
+  { id: "ext6-23", unit: "ext6", en: "morning",   zh: "早上；上午", ex: "Good morning!",             emoji: "🌄" },
+  { id: "ext6-24", unit: "ext6", en: "afternoon", zh: "下午",     ex: "Good afternoon!",            emoji: "☀️" },
+  { id: "ext6-25", unit: "ext6", en: "evening",   zh: "晚上",     ex: "Good evening!",              emoji: "🌆" },
+  { id: "ext6-26", unit: "ext6", en: "night",     zh: "夜晚；夜里", ex: "Good night!",               emoji: "🌙" },
+  { id: "ext6-27", unit: "ext6", en: "week",      zh: "星期；周",  ex: "Seven days in a week.",     emoji: "📅" },
+  { id: "ext6-28", unit: "ext6", en: "month",     zh: "月；月份",  ex: "This month is June.",       emoji: "🗓️" },
+  { id: "ext6-29", unit: "ext6", en: "year",      zh: "年",       ex: "A year has twelve months.", emoji: "🎆" }
 ];
 
 if (typeof module !== "undefined") module.exports = { UNITS: UNITS, WORDS: WORDS };
